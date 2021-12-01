@@ -1,10 +1,10 @@
-var fs = require('fs');
-var array = fs.readFileSync('input.txt').toString().split("\n");
+let fs = require('fs');
+let array = fs.readFileSync('input.txt').toString().split("\n");
 
 let counter = 1
 
 for (let i = 0; i < array.length - 1; i++) {
-    if (array[i] > array[i - 1]){
+    if (array[i] > array[i - 1]) {
         counter++
         console.log(array[i] + " ");
     }
