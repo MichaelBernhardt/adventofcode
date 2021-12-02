@@ -3,20 +3,22 @@ let array = fs.readFileSync('input.txt').toString().split("\n");
 
 let depth = 0;
 let horizontal = 0;
-
+let instuctionValue = 0;
 
 for (let i = 0; i < array.length; i++) {
+
+    instuctionValue = parseInt((array[i].match(/\d+/)));
     
     if (array[i].includes("forward")) {
-        horizontal = horizontal + parseInt((array[i].match(/\d+/)));
+        horizontal = horizontal + instuctionValue;
     }
 
     if (array[i].includes("down")) {
-        depth = depth + parseInt((array[i].match(/\d+/)));
+        depth = depth + instuctionValue;
     }
 
     if (array[i].includes("up")){
-        depth = depth - parseInt((array[i].match(/\d+/)));
+        depth = depth - instuctionValue;
     }
 }
 

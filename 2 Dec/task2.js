@@ -30,5 +30,3 @@ console.log("Horizontal: " + horizontal);
 console.log("Depth: " + depth);
 console.log("Aim: " + aim);
 console.log("Final answer. Horizontal x Depth = " + finalAnswer);
-
-
