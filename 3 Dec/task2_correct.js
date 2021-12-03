@@ -61,5 +61,12 @@ for (let i = 0; i < codeLenght; i++) {
 
 const oxygenValue = parseInt(oxygen[0], 2);
 const co2Value = parseInt(co2[0], 2);
+const LifeSupportRating = oxygenValue * co2Value;
 
 console.log(oxygenValue * co2Value);
+
+console.log("oxygenGeneratorRatingBinary: " + oxygen);
+console.log("co2ScrubberRatingBinary: " + co2);
+console.log("oxygenGeneratorRating: " + oxygenValue);
+console.log("co2ScrubberRating: " + co2Value);
+console.log("Life Support Rating: " + LifeSupportRating);

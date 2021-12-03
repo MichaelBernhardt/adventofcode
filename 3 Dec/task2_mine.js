@@ -67,7 +67,6 @@ for (let a = 0; a < 12; a++) {
     let result = array.filter(word => word.charAt(a) != leastCommonValue);
 
     if (result.length == 1){
-        console.log(result)
         co2ScrubberRatingBinary =  result
     } else {
          array = result
