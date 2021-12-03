@@ -27,5 +27,3 @@ const finalAnswer = depth * horizontal;
 console.log("Horizontal: " + horizontal);
 console.log("Depth: " + depth);
 console.log("Final answer. Horizontal x Depth = " + finalAnswer);
-
-
